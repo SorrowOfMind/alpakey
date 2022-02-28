@@ -1,0 +1,25 @@
+.nav-container{
+    position: fixed;
+    left: 0;
+    margin: 10px;
+    height: 100vh;
+    margin: 0px;
+    background-color: $main-blue;
+}
+
+.logo-container{
+    background-color: $main-blue;
+    display: flex;
+    padding: 20px 30px 20px 20px;
+    align-items: center;
+    width: 100%;
+    .logo {
+        margin:0 0 0 15px;
+        .logo-link {
+            color: white;
+            &:hover {
+                color: $light-blue;
+            }
+        }
+    }
+}
