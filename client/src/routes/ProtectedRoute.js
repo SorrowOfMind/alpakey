@@ -1,18 +1,9 @@
-import React, { Component } from 'react';
-import {Route, Redirect} from 'react-router-dom';
+import React from 'react'
+import {Navigate} from 'react-router-dom';
 
-
-const ProtectedRoute = ({component: Component, ...rest}) => {
-    const isLogged = false;
-
-    return (
-        <>
-            {isLogged && (
-                <Route />
-            )}
-        </>
-    );
-
+const ProtectedRoute = ({children}) => {
+    const logged = false;
+    return logged ? children : <Navigate to="/login" replace />;
 }
 
 export default ProtectedRoute;

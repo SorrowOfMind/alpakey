@@ -17,25 +17,15 @@ button {
     cursor: pointer;
 }
 
-.clearfix {
-    &:before, &:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
+.container {
+    max-width: 1200px;
+    max-width: 0 auto;
 }
 
-.app {
-    display: flex;
-    overflow: hidden;
+.content-wrapper {
+    @include flexbox(row, space-between, stretch);
 }
 
-.navbar {
-    flex: 0.2;
-}
-
-.main{
-    flex: 0.8;
+.main {
     width: 100%;
-    padding: 20px;
 }

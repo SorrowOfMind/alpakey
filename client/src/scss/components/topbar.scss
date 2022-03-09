@@ -1,0 +1,19 @@
+.topbar {
+    height: 85px;
+    padding: 0;
+    @include flexbox(row, space-between, center);
+    .topbar-avatar {
+        background-color: $orange;
+        color: $main-blue;
+    }
+    .auth-menu {
+        @include flexbox(row, center, stretch);
+        margin-right: 20px;
+        .ant-menu-item-selected {
+            background-color: transparent !important;
+            a {
+                color: rgba(255, 255, 255, 0.65) !important;
+            }
+        }
+    }
+}

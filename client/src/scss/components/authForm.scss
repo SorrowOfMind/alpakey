@@ -1,0 +1,41 @@
+.form-wrapper {
+    position: relative;
+    border: 1px solid $light-blue;
+    top: 100px;
+    width: 50%;
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 40px 100px;
+    border-radius: 2px;
+
+    .form-title {
+        text-align: center;
+        padding-bottom: 30px;
+        @include fluid-font(16px, 26px)
+    }
+
+    .auth-btn-wrapper {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .auth-btn {
+        width: 100%;
+        margin: 30px auto 0px auto;
+    }
+
+    .auth-link {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        @include fluid-font(10px, 14px)
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .form-wrapper {
+        padding: 20px 50px;
+    }
+}
