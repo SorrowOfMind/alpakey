@@ -18,3 +18,16 @@ export const LogIn = ({username, password}) => {
         }
     }
 }
+
+export const SignUp = ({}) => {
+    const url = `${ENDPOINT}/api/auth/register`;
+    return async dispatch => {
+        const results = await fetch(url, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({})
+        });
+        const jsonResponse = await results.json();
+        console.log(jsonResponse);
+    }
+}
